@@ -1,0 +1,16 @@
+2025-11-19 04:22:18----0 /Applications/XAMPP/xamppfiles/htdocs/Assessment3/includes/DBController.inc 53 DBController::retrieveRecord(): Return value must be of type array, null returned #0 /Applications/XAMPP/xamppfiles/htdocs/Assessment3/details.php(22): DBController->retrieveRecord('techevents', '6')
+#1 {main}
+2025-11-19 04:44:58----0 /Applications/XAMPP/xamppfiles/htdocs/Assessment3/includes/DBController.inc 53 DBController::retrieveRecord(): Return value must be of type array, null returned #0 /Applications/XAMPP/xamppfiles/htdocs/Assessment3/modify_record_details.php(22): DBController->retrieveRecord('techevents', '26')
+#1 {main}
+2025-11-19 04:47:59----0 /Applications/XAMPP/xamppfiles/htdocs/Assessment3/includes/DBController.inc 53 DBController::retrieveRecord(): Return value must be of type array, null returned #0 /Applications/XAMPP/xamppfiles/htdocs/Assessment3/delete_record_details.php(22): DBController->retrieveRecord('techevents', '6')
+#1 {main}
+2025-11-20 00:18:47----0 /Applications/XAMPP/xamppfiles/htdocs/Assessment3/includes/DBController.inc 71 File upload failed. #0 /Applications/XAMPP/xamppfiles/htdocs/Assessment3/inserttodb.php(32): DBController->uploadImage('images/17635943...', '/Applications/X...')
+#1 {main}
+2025-11-20 00:20:03----0 /Applications/XAMPP/xamppfiles/htdocs/Assessment3/includes/DBController.inc 71 File upload failed. #0 /Applications/XAMPP/xamppfiles/htdocs/Assessment3/inserttodb.php(35): DBController->uploadImage('images/17635944...', '/Applications/X...')
+#1 {main}
+2025-11-20 00:38:56----0 /Applications/XAMPP/xamppfiles/htdocs/Assessment3/includes/DBController.inc 71 File upload failed. #0 /Applications/XAMPP/xamppfiles/htdocs/Assessment3/inserttodb.php(36): DBController->uploadImage('images/17635955...', '/Applications/X...')
+#1 {main}
+2025-11-20 00:41:50----0 /Applications/XAMPP/xamppfiles/htdocs/Assessment3/includes/DBController.inc 71 File upload failed. #0 /Applications/XAMPP/xamppfiles/htdocs/Assessment3/inserttodb.php(36): DBController->uploadImage(NULL, '/Applications/X...')
+#1 {main}
+2025-11-20 00:42:07----0 /Applications/XAMPP/xamppfiles/htdocs/Assessment3/includes/DBController.inc 71 File upload failed. #0 /Applications/XAMPP/xamppfiles/htdocs/Assessment3/inserttodb.php(36): DBController->uploadImage(NULL, '/Applications/X...')
+#1 {main}

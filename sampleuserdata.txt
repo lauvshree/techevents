@@ -1,0 +1,21 @@
+#!/bin/bash -ex
+dnf update -y
+dnf install -y git httpd php php-pdo php-mysqlnd mariadb105 nc
+
+# Clone repository
+git clone https://github.com/lauvshree/dbserver-cloudformation.git
+mv dbserver-cloudformation/*.php /var/www/html/
+
+# Execute MySQL commands
+echo "Executing MySQL setup..."
+
+mysql -h db1.ck47a7bsk6nz.us-east-1.rds.amazonaws.com -u admin -padmin123 -e "SOURCE dbserver-cloudformation/createuser.sql"
+# Set environment variables in Apache
+echo "SetEnv DB_HOST db1.ck47a7bsk6nz.us-east-1.rds.amazonaws.com" >> /etc/httpd/conf/httpd.conf
+echo "SetEnv DB_USER admin" >> /etc/httpd/conf/httpd.conf
+echo "SetEnv DB_PASS admin123" >> /etc/httpd/conf/httpd.conf
+
+# Start and enable Apache
+systemctl start httpd
+systemctl enable httpd
+echo "Setup complete!"
